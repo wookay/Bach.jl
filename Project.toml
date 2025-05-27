@@ -5,10 +5,12 @@ version = "0.1.0"
 
 [deps]
 MIDI = "f57c4921-e30c-5f49-b073-3f2f2ada663e"
+Mods = "7475f97c-0381-53b1-977b-4c60186c8d62"
 
 [compat]
 julia = "1.6"
 MIDI = "2.7"
+Mods = "2.2"
 Jive = "0.3"
 
 [extras]

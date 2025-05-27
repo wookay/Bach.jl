@@ -1,5 +1,5 @@
 module Bach
 
-greet() = print("Hello World!")
+include("modulo12.jl")
 
 end # module Bach

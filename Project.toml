@@ -6,11 +6,15 @@ version = "0.1.0"
 [deps]
 MIDI = "f57c4921-e30c-5f49-b073-3f2f2ada663e"
 Mods = "7475f97c-0381-53b1-977b-4c60186c8d62"
+Graphs = "86223c79-3864-5bf0-83f7-82e725a168b6"
+Karnak = "cd156443-31ad-4f6f-850f-a93ee5f75905"
 
 [compat]
 julia = "1.6"
 MIDI = "2.7"
 Mods = "2.2"
+Graphs = "1.12"
+Karnak = "1.1"
 Jive = "0.3"
 
 [extras]

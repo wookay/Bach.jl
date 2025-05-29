@@ -32,10 +32,14 @@ function edge_arrows_func(edge_n, edge_src, edge_dst, from, to)
         arrowheadlength = 7)
 end
 
-function edge_labels_func(edge_n, edge_src, edge_dst, from, to)
+function _edge_labels_func(edge_n, edge_src, edge_dst, from, to)
     name_src = vertex_labels_func(edge_src)
     name_dst = vertex_labels_func(edge_dst)
     text(string(name_src, " → ", name_dst), midpoint(from, to))
+end
+
+function edge_labels_func(edge_n, edge_src, edge_dst, from, to)
+    _edge_labels_func(edge_n, edge_src, edge_dst, from, to)
 end
 
 global frame_framenumber::Int = 0
@@ -49,7 +53,7 @@ end
 function frame_edge_labels_func(edge_n, edge_src, edge_dst, from, to)
     global frame_framenumber
     if frame_framenumber == edge_n
-        edge_labels_func(edge_n, edge_src, edge_dst, from, to)
+        _edge_labels_func(edge_n, edge_src, edge_dst, from, to)
     end
 end
 
